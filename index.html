@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080811">
+    <meta name="description" content="A little universe made especially for Zizi.">
+    <title>For Zizi ✦ A Little Universe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="stars" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a href="#home" class="logo" aria-label="Back to top">
+            <span class="logo-mark">Z</span>
+            <span>PROJECT <span class="gradient-text">ZIZI</span></span>
+        </a>
+
+        <button class="music-button" id="musicButton" type="button">
+            ♫ MUSIC OFF
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <p class="eyebrow">✦ A LITTLE SOMETHING JUST FOR YOU ✦</p>
+
+            <h1>
+                The universe<br>
+                is brighter <span class="gradient-text">with you.</span>
+            </h1>
+
+            <p class="hero-description">
+                Out of all the people in this universe, today is about one person.
+                Someone who deserves a little extra magic.
+            </p>
+
+            <div class="orb-wrap" aria-hidden="true">
+                <div class="orbit"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orb">Z</div>
+            </div>
+
+            <button class="primary-button" id="surpriseButton" type="button">
+                OPEN YOUR SURPRISE <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="scroll-hint">MADE WITH LOVE · JUST FOR ZIZI</p>
+        </section>
+
+        <!-- BIRTHDAY MESSAGE -->
+        <section class="content-section" id="birthday">
+            <div class="section-heading">
+                <p class="eyebrow">01 / YOUR SPECIAL DAY</p>
+                <h2>A little <span class="gradient-text">message for you.</span></h2>
+                <p>
+                    This little corner of the universe was made especially for you. 💗
+                </p>
+            </div>
+
+            <div class="birthday-card">
+                <span class="big-emoji" aria-hidden="true">🎂💗</span>
+
+                <h3>გილოცავ დაბადების დღეს, ზიზი! ✨</h3>
+
+                <p lang="ka">
+                    მინდა, რომ სულ ბედნიერი იყო და ყველა შენი სურვილი აგსრულებოდეს 💗
+                </p>
+
+                <button class="primary-button" id="revealButton" type="button">
+                    REVEAL YOUR MESSAGE
+                </button>
+
+                <div class="hidden-message" id="birthdayMessage" lang="ka">
+                    გილოცავ დაბადების დღეს, ზიზი 💗
+                    მინდა, რომ სულ ბედნიერი იყო და ყველა შენი სურვილი აგსრულებოდეს ✨
+                </div>
+            </div>
+        </section>
+
+        <!-- BIRTHDAY CAKE -->
+        <section class="content-section" id="cake-section">
+            <div class="section-heading">
+                <p class="eyebrow">02 / MAKE A WISH</p>
+                <h2>A little <span class="gradient-text">birthday magic.</span></h2>
+                <p>
+                    Close your eyes, make a wish, and tap every candle to blow it out.
+                </p>
+            </div>
+
+            <div class="cake-area">
+                <div class="cake" aria-label="Birthday cake with five candles">
+                    <div class="cake-plate"></div>
+                    <div class="cake-bottom"></div>
+                    <div class="icing"></div>
+                    <div class="cake-top"></div>
+
+                    <div class="candles">
+                        <button class="candle" type="button" aria-label="Blow out candle 1">
+                            <span class="flame"></span>
+                        </button>
+                        <button class="candle" type="button" aria-label="Blow out candle 2">
+                            <span class="flame"></span>
+                        </button>
+                        <button class="candle" type="button" aria-label="Blow out candle 3">
+                            <span class="flame"></span>
+                        </button>
+                        <button class="candle" type="button" aria-label="Blow out candle 4">
+                            <span class="flame"></span>
+                        </button>
+                        <button class="candle" type="button" aria-label="Blow out candle 5">
+                            <span class="flame"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="cake-instruction">
+                    Your birthday wishes deserve a little magic. ✨
+                </p>
+
+                <p class="cake-message" id="cakeMessage" aria-live="polite">
+                    Make a wish, Zizi. 💗
+                </p>
+            </div>
+        </section>
+
+        <!-- PERSONAL LETTER -->
+        <section class="content-section" id="letter">
+            <div class="section-heading">
+                <p class="eyebrow">03 / FROM THE HEART</p>
+                <h2>A letter <span class="gradient-text">for you.</span></h2>
+                <p>
+                    Some things deserve more than just a birthday greeting.
+                </p>
+            </div>
+
+            <div class="letter-card">
+                <p class="eyebrow">DEAR ZIZI,</p>
+                <h3>A little something to remember.</h3>
+
+                <p>
+                    I hope today gives you a thousand reasons to smile
+                    and reminds you how much happiness you deserve.
+                </p>
+
+                <button class="primary-button" id="letterButton" type="button">
+                    OPEN YOUR LETTER
+                </button>
+
+                <div class="letter-content" id="letterContent">
+                    <p lang="ka">
+                        ზიზი, გისურვებ უამრავ ბედნიერ დღეს, გულწრფელ ღიმილს
+                        და ისეთ მომენტებს, რომლებიც ყოველთვის გაგათბობს გულს. 💗
+                    </p>
+
+                    <p lang="ka">
+                        მინდა, რომ ყველა შენი ოცნება აგსრულებოდეს,
+                        ცხოვრებაში ბევრი ლამაზი რამ შეგხვედროდეს
+                        და არასდროს დაგკლებოდეს მიზეზი ბედნიერებისთვის. ✨
+                    </p>
+
+                    <p>
+                        You deserve so many beautiful things in this world.
+                        Never stop dreaming, smiling, and being yourself.
+                        I hope this year brings you more happiness than
+                        you could ever imagine.
+                    </p>
+
+                    <div class="signature">With love, always ✦</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECRET SURPRISE -->
+        <section class="content-section" id="secret">
+            <div class="section-heading">
+                <p class="eyebrow">04 / TOP SECRET</p>
+                <h2>One last <span class="gradient-text">little surprise.</span></h2>
+                <p>
+                    There's one more thing waiting for you.
+                </p>
+            </div>
+
+            <div class="secret-card">
+                <div class="secret-lock" aria-hidden="true">🔐</div>
+                <h3>A tiny secret, just for you.</h3>
+
+                <p>
+                    Not every surprise reveals itself right away.
+                    Tap below to uncover this one.
+                </p>
+
+                <button class="primary-button" id="secretButton" type="button">
+                    UNLOCK YOUR SECRET
+                </button>
+
+                <div class="hidden-message" id="secretMessage" lang="ka">
+                    ზიზი, არასდროს დაგავიწყდეს, რამდენად განსაკუთრებული ხარ. 💗
+                    სულ ბედნიერი იყავი, ბევრი იოცნებე და არასდროს შეწყვიტო ბრწყინვა. ✨
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>PROJECT ZIZI © 2026</span>
+        <span>DESIGNED WITH ♡ UNDER THE STARS</span>
+    </footer>
+
+    <audio id="music" src="birthday.mp3" preload="none" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
